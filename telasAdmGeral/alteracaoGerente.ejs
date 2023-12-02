@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/telasAdmGeral/styleAlteracaoGerente.css' />
+    <title>ALTERAÇÃO GERENTE</title>
+</head>
+<body>
+
+    <%- include('../padraoSuperior'); %>
+
+
+        <div class="fundoPagina">
+
+          <div class="divTitulo">  <label class="labelTitulo">TROCA DE GERENTES:</label></div>
+
+            <label class="labelAlteracao labelOndeEsta">De onde está:</label>
+
+            <select id=pontoAtencaoOndeEsta class="comboPontoAtencaoOndeEsta">
+                <option>Ponto de Atenção</option>
+                <option>Ponto de Atenção 1</option>
+                <option>Ponto de Atenção 2</option>
+                <option>Ponto de Atenção 3</option>
+            </select>
+
+            <label class="labelAlteracao labelOndeIra">Para onde irá:</label>
+
+            <select id=pontoAtencaoOndeIra class="comboPontoAtencaoOndeIra">
+                <option>Ponto de Atenção</option>
+                <option>Ponto de Atenção 1</option>
+                <option>Ponto de Atenção 2</option>
+                <option>Ponto de Atenção 3</option>
+            </select>
+
+            <div class="checkTipoOdonto">
+                <input type="checkbox" id="tipoOdonto" class="checkbox">
+                <label for="tipoOdonto" class="labelCheck"> Odonto
+                </label>
+               </div>
+        
+               <div class="checkTipoEnfermeira">
+                <input type="checkbox" id="tipoEnfermeira" class="checkbox">
+                <label for="tipoEnfermeira" class="labelCheck"> Enf. Chefe
+                </label>
+               </div>
+
+              
+
+
+            <button class="botao botaoConfirmar" id="botaoConfirmar">Confirmar</button>
+
+
+        </div>
+    
+</body>
+</html>

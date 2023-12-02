@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ALTERAÇÕES</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/telasAdmGeral/styleAlteracao.css' />
+
+</head>
+
+<body>
+    <%- include('../padraoSuperior'); %>
+        <div class="fundoPaginaAlteracao">
+
+            <div class="divTituloAlteracao">
+
+                <label class="labelTituloAlteracao">Alteração 1</label>
+
+            </div>
+
+            <label class="labelInputVerde labelDataOriginal">Data prevista original:</label>
+            <label class="labelInputRecebido labelDataOriginalRecebida">00/00/0000</label>
+
+            <label class="labelInputVerde labelDataAnterior">Data prevista anterior:</label>
+            <label class="labelInputRecebido labelDataAnteriorRecebida">00/00/0000</label>
+
+            <label class="labelInputVerde labelDataAtual">Data prevista atual:</label>
+            <label class="labelInputRecebido labelDataAtualRecebida">00/00/0000</label>
+
+            <label class="labelInputVerde labelPrioridadeOriginal">Prioridade Original:</label>
+            <label class="labelInputVerde labelPrioridadeAnterior">Prioridade Anterior:</label>
+            <label class="labelInputVerde labelPrioridadeAtual">Prioridade Atual:</label>
+
+
+            <div class="divPrioridadeOriginal"><label class="labelPrioridadeNaoDefinida">Não Definida</label></div>
+
+            <div class="divPrioridadeAnterior"><label class="labelPrioridadeAlta">Alta</label></div>
+
+            <div class="divPrioridadeAtual"><label class="labelPrioridadeBaixa">Baixa</label></div>
+
+            <label class="labelInputVerde labelJustificativa">Justificativa:</label>
+            <div class="divTextoJustificativa"> <label class="labelTextoDentroInputFixo">aaaa aaaa aaaaaaaa aaaaa aaaaa aaaa aaaaaaaa aaaaaaaaaa aaaaaaaaaaa aaaaaaaaaa</label></div>
+
+
+            <button class="botao botaoVoltar" id="botaoVoltar">Voltar</button>
+        </div>
+</body>
+
+</html>

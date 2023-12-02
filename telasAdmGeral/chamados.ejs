@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/telasAdmGeral/styleChamados.css' />
+    <title>CHAMADOS</title>
+
+</head>
+
+<body>
+
+    <%- include('../padraoSuperior'); %>
+        <div class="fundoPaginaFiltroDep">
+            <label class="labelFiltro"> Filtrar por:</label>
+
+            <div class="checkDataRecente">
+                <input type="checkbox" id="dataRecente" class="checkbox">
+                <label for="dataRecente" class="labelCheck"> Data mais recente
+                </label>
+            </div>
+
+            <div class="checkDataAntiga">
+                <input type="checkbox" id="dataAntiga" class="checkbox">
+                <label for="dataAntiga" class="labelCheck"> Data mais antiga
+                </label>
+            </div>
+
+            <div class="checkNegado">
+                <input type="checkbox" id="negados" class="checkbox">
+                <label for="negados" class="labelCheck"> Negados
+                </label>
+            </div>
+
+            <div class="checkExecucao">
+                <input type="checkbox" id="execucao" class="checkbox">
+                <label for="execucao" class="labelCheck"> Em execução
+                </label>
+            </div>
+
+            <div class="checkNaoProcessado">
+                <input type="checkbox" id="naoProcessado" class="checkbox">
+                <label for="naoProcessado" class="labelCheck"> Não processado
+                </label>
+            </div>
+
+            <div class="checkFinalizado">
+                <input type="checkbox" id="finalizado" class="checkbox">
+                <label for="finalizado" class="labelCheck">Finalizados
+                </label>
+            </div>
+
+            <div class="checkAlta">
+                <input type="checkbox" id="alta" class="checkbox">
+                <label for="alta" class="labelCheck"> Prioridade: Alta
+                </label>
+            </div>
+
+            <div class="checkMedia">
+                <input type="checkbox" id="media" class="checkbox">
+                <label for="media" class="labelCheck"> Prioridade: Média
+                </label>
+            </div>
+
+            <div class="checkBaixa">
+                <input type="checkbox" id="baixa" class="checkbox">
+                <label for="baixa" class="labelCheck">Prioridade: Baixa
+                </label>
+            </div>
+
+            <select id=pontoAtencao class="comboPontoAtencao">
+                <option>Ponto de Atenção</option>
+                <option>Ponto de Atenção 1</option>
+                <option>Ponto de Atenção 2</option>
+                <option>Ponto de Atenção 3</option>
+            </select>
+
+        </div>
+
+        <div class="fundoPaginaDinamica">
+
+            <div class="fundoPaginaScroll">
+                <ul class="ulListaChamados">
+                    <button type="submit" class="liBotao">
+                        <ul class="ulTextos">
+                            <input type="text" hidden="no" value="O id do chamado">
+                            <li class="textoChamado"> <label class="labelTextoChamado">Chamado 1 </label></li>
+                            <li class="textoPrioridade"><label class="labelTextoChamado">PRIORIDADE:
+                                    <label class="labelPrioridadeAlta">ALTA</label>
+                                </label></li>
+                            <li class="textoData"> <label class="labelTextoChamado">Data: 00/00/0000 </label></li>
+                        </ul>
+                    </button>
+
+
+                    <button type="submit" class="liBotao">
+                        <ul class="ulTextos">
+                            <li class="textoChamado"> <label class="labelTextoChamado ">Chamado 2 </label></li>
+                            <li class="textoPrioridade"> <label class="labelTextoChamado ">PRIORIDADE:
+                                    <label class="labelPrioridadeMedia">MÉDIA</label>
+                                </label></li>
+                            <li class="textoData"> <label class="labelTextoChamado">Data: 00/00/0000</label></li>
+                        </ul>
+                    </button>
+
+
+                    <button type="submit" class="liBotao">
+                        <ul class="ulTextos">
+                            <li class="textoChamado"> <label class="labelTextoChamado">Chamado 3 </label></li>
+                            <li class="textoPrioridade"> <label class="labelTextoChamado">PRIORIDADE:
+                                    <label class="labelPrioridadeBaixa">BAIXA</label>
+                                </label></li>
+                            <li class="textoData"> <label class="labelTextoChamado">Data: 00/00/0000</label></li>
+                        </ul>
+                    </button>
+
+
+                    <button type="submit" class="liBotao">
+                        <ul class="ulTextos">
+                            <li class="textoChamado"> <label class="labelTextoChamado">Chamado 4 </label></li>
+                            <li class="textoPrioridade"> <label class="labelTextoChamado">PRIORIDADE:
+                                    <label class="labelPrioridadeNaoDefinida">NÃO DEFINIDA</label>
+                                </label></li>
+                            <li class="textoData"> <label class="labelTextoChamado">Data: 00/00/0000</label></li>
+                        </ul>
+                    </button>
+
+                    <button type="submit" class="liBotao">
+                        <ul class="ulTextos">
+                            <li class="textoChamado"> <label class="labelTextoChamado ">Chamado 2 </label></li>
+                            <li class="textoPrioridade"> <label class="labelTextoChamado ">PRIORIDADE:
+                                    <label class="labelPrioridadeMedia">MÉDIA</label>
+                                </label></li>
+                            <li class="textoData"> <label class="labelTextoChamado">Data: 00/00/0000</label></li>
+                        </ul>
+                    </button>
+
+                    <button type="submit" class="liBotao">
+                        <ul class="ulTextos">
+                            <li class="textoChamado"> <label class="labelTextoChamado">Chamado 4 </label></li>
+                            <li class="textoPrioridade"> <label class="labelTextoChamado">PRIORIDADE:
+                                    <label class="labelPrioridadeNaoDefinida">NÃO DEFINIDA</label>
+                                </label></li>
+                            <li class="textoData"> <label class="labelTextoChamado">Data: 00/00/0000</label></li>
+                        </ul>
+                    </button>
+
+                    <button type="submit" class="liBotao">
+                        <ul class="ulTextos">
+                            <li class="textoChamado"> <label class="labelTextoChamado">Chamado 4 </label></li>
+                            <li class="textoPrioridade"> <label class="labelTextoChamado">PRIORIDADE:
+                                    <label class="labelPrioridadeNaoDefinida">NÃO DEFINIDA</label>
+                                </label></li>
+                            <li class="textoData"> <label class="labelTextoChamado">Data: 00/00/0000</label></li>
+                        </ul>
+                    </button>
+
+                    <button type="submit" class="liBotao">
+                        <ul class="ulTextos">
+                            <li class="textoChamado"> <label class="labelTextoChamado">Chamado 4 </label></li>
+                            <li class="textoPrioridade"> <label class="labelTextoChamado">PRIORIDADE:
+                                    <label class="labelPrioridadeNaoDefinida">NÃO DEFINIDA</label>
+                                </label></li>
+                            <li class="textoData"> <label class="labelTextoChamado">Data: 00/00/0000</label></li>
+                        </ul>
+                    </button>
+
+                    <button type="submit" class="liBotao">
+                        <ul class="ulTextos">
+                            <li class="textoChamado"> <label class="labelTextoChamado">Chamado 4 </label></li>
+                            <li class="textoPrioridade"> <label class="labelTextoChamado">PRIORIDADE:
+                                    <label class="labelPrioridadeNaoDefinida">NÃO DEFINIDA</label>
+                                </label></li>
+                            <li class="textoData"> <label class="labelTextoChamado">Data: 00/00/0000</label></li>
+                        </ul>
+                    </button>
+
+                    <button type="submit" class="liBotao">
+                        <ul class="ulTextos">
+                            <li class="textoChamado"> <label class="labelTextoChamado">Chamado 4 </label></li>
+                            <li class="textoPrioridade"> <label class="labelTextoChamado">PRIORIDADE:
+                                    <label class="labelPrioridadeNaoDefinida">NÃO DEFINIDA</label>
+                                </label></li>
+                            <li class="textoData"> <label class="labelTextoChamado">Data: 00/00/0000</label></li>
+                        </ul>
+                    </button>
+
+                    
+                </ul>
+            </div>
+
+            <button class="botao botaoSair">Sair</button>
+
+        </div>
+
+
+</body>
+
+</html>

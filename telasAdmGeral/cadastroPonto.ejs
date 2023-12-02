@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/telasAdmGeral/styleCadastroPonto.css' />
+    <title>CADASTRO PONTO</title>
+</head>
+
+<body>
+
+    <%- include('../padraoSuperior'); %>
+
+        <div class="fundoPaginaCadastro">
+
+            <label class="labelCadastro labelNome"> Nome:</label>
+            <input type="text" class="input inputNome" name="inputNome" id="inputNome" placeholder="Digite o nome">
+
+            <label class="labelCadastro labelEndereco"> Endereço:</label>
+
+            <input type="text" class="input inputRua" name="inputRua" id="inputRua" placeholder="Rua">
+
+            <input type="text" class="input inputQuadra" name="inputQuadra" id="inputQuadra" placeholder="Quadra">
+
+            <input type="text" class="input inputLote" name="inputLote" id="inputLote" placeholder="Lote">
+
+            <input type="text" class="input inputSetor" name="inputSetor" id="inputSetor" placeholder="Setor">
+
+            <input type="text" class="input inputCep" oninput="formatarCEP()" name="inputCep" id="inputCep"
+                placeholder="CEP" maxlength="9">
+
+                <input type="submit" id="botaoCadastrar" class="botao botaoCadastrar" value="Cadastrar">
+                <input type="submit" id="botaoVoltar" class="botao botaoVoltar" value="Voltar">
+
+        </div>
+
+        <script>
+
+            function formatarCEP() {
+                var input = document.getElementById("inputCep");
+                input = event.target;
+                var value = input.value.replace(/\D/g, ''); // Remove caracteres não numéricos
+
+                if (value.length > 5) {
+                    value = value.substring(0, 5) + "-" + value.substring(5);
+                }
+
+
+                input.value = value;
+            }
+        </script>
+
+</body>
+
+</html>
